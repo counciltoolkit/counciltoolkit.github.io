@@ -111,7 +111,17 @@ h2,
 	}
 	
 .next-steps {
+	background: #F38630;
+	color: #fff;
+	margin-bottom: 20px;
+	margin-top: 20px;
 	padding-bottom: 20px;
+	}
+	
+.next-steps .btn {
+	background: #fff;
+	border-color: #fff;
+	color: #BF4D28;
 	}
 	
 .last-section, 
@@ -133,5 +143,28 @@ h2,
 	}
 	
 .next-steps .download h2 {
-	margin-bottom: 20px;
+	margin-bottom: 20px; 
+	}
+	
+.twitter-follow-button, 
+.fb-like, 
+.github-follow, 
+.fb-like span iframe,, 
+.fb-like > span, 
+.share-twitter iframe, 
+#___plusone_0, 
+.IN-widget {
+	height: 20px !important;
+	vertical-align: top !important;
+	}
+	
+.twitter-follow-button, 
+.fb-like, 
+.github-follow {
+	margin-right: 20px;
+	}
+	
+[role="contentinfo"] ul {
+	margin-bottom: 1em;
+	margin-left: -15px;
 	}
