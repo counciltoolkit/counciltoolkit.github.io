@@ -116,8 +116,11 @@ h2,
 	padding: 16px 26px;
 	}
 	
-.next-steps .download h2 {
-	margin-bottom: 20px; 
+.next-steps .download .btn:hover, 
+.next-steps .download .btn:focus {
+	background: #333;
+	border-color: #333;
+	color: #fff;
 	}
 	
 .twitter-follow-button, 
