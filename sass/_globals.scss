@@ -54,20 +54,12 @@ h2,
 	margin-bottom: 0;
 	}
 	
-.container > .navbar-header {
-	margin-left: 0;
-	padding-bottom: 15px;
-	padding-top: 15px;
-	width: 100%;
-	@include respond-min(62em) {
-		width: auto;
-		}
-	}
-	
 .navbar-inverse .navbar-brand {
 	color: #fff;
-	float: none;
-	margin-left: -15px;
+	@include respond-min(48em) {
+		padding-bottom: 26px;
+		padding-top: 22px;
+		}
 	}
 	
 .tagline {
@@ -78,32 +70,14 @@ h2,
 	
 .navbar-inverse .navbar-nav > li > a {
 	color: #fff;
-	padding-bottom: 22px;
+	padding-bottom: 26px;
 	padding-top: 22px;
 	}
 	
-.navbar-toggle {
-	margin-bottom: 0;
-	margin-right: 0;
-	margin-top: 3px;
-	@include respond-min(48em) {
-		display: block !important;
-		}
-	@include respond-min(62em) {
-		display: none !important;
-		}
-	}
-	
 .navbar-collapse.collapse {
-	@include respond-min(48em) {
-		display: none !important;
-		}
-	@include respond-min(62em) {
-		display: block !important;
-		float: right;
-		margin-right: -15px;
-		width: auto;
-		}
+	float: right;
+	margin-right: -15px;
+	width: auto;
 	}
 	
 .navbar-nav {
