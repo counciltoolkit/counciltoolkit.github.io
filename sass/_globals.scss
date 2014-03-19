@@ -70,8 +70,10 @@ h2,
 	
 .navbar-inverse .navbar-nav > li > a {
 	color: #fff;
-	padding-bottom: 26px;
-	padding-top: 22px;
+	@include respond-min(48em) {
+		padding-bottom: 26px;
+		padding-top: 22px;
+		}
 	}
 	
 .navbar-collapse.collapse {
