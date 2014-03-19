@@ -87,7 +87,7 @@
 						
 						<h1>Welcome to <span class="no-orphans">Council Toolkit</span></h1>
 				
-						<p>An open source toolkit that helps Councils rapidly design and build responsive websites to support digital public services. </p>
+						<p>An open source toolkit that helps Councils rapidly design and build responsive websites to support digital public services.</p>
 						
 					</div>
 					
@@ -111,7 +111,7 @@
 									
 								</div>
 								
-								<small>Last updated: 18 March 2014</small>
+								<small>Last updated: <span id="github-last-updated">unknown</span></small>
 								
 							</div>
 							
@@ -338,6 +338,23 @@
 		<script src="/js/libs/shards.min.js"></script>
 		<script>
 			$('.jumbotron, .next-steps').shards([0,0,0,.01],[255,255,255,.01],[255,255,255,.01],10,2,2,.05,false);
+		</script>
+		
+		<script>
+			$(function(){
+			githubAPIUrl = "https://api.github.com/repos/counciltoolkit/Templates";
+			  var options = {
+			    year: "numeric", month: "long",
+			    day: "numeric"
+			};
+			$.ajax({
+			  url: githubAPIUrl,
+			  dataType: 'json',
+			  success: function(data){
+			    $( "#github-last-updated" ).html(new Date(data.updated_at).toLocaleDateString("en-gb", options));  
+			  }
+			});
+			})
 		</script>
 		
 		<script>
