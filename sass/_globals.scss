@@ -75,9 +75,11 @@ h2,
 	}
 	
 .navbar-collapse.collapse {
-	float: right;
-	margin-right: -15px;
-	width: auto;
+	@include respond-min(48em) {
+		float: right;
+		margin-right: -15px;
+		width: auto;
+		}
 	}
 	
 .navbar-nav {
@@ -138,6 +140,7 @@ h2,
 .twitter-follow-button, 
 .fb-like, 
 .github-follow {
+	margin-bottom: 20px;
 	margin-right: 20px;
 	}
 	
